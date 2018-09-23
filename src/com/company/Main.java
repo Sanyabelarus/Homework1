@@ -9,7 +9,7 @@ public class Main {
 
 
     }
-    public static int isNumber(){
+    public static int isNumber(){                                       // Проверка, являеться ли ввод числом
         boolean stop = false;
         while (!stop){
         Scanner scanner = new Scanner(System.in);
@@ -23,7 +23,7 @@ public class Main {
         }}
         return 0;
     }
-    public static int rightHour(int hour) {
+    public static int rightHour(int hour) {                             // Правильно ли введен час
         boolean rightHour = false;
         while (!rightHour){
             if(hour>=1 && hour<=24){
@@ -37,7 +37,7 @@ public class Main {
             }}
             return 0;
     }
-    public static int rightMinute(int minute) {
+    public static int rightMinute(int minute) {                         // Правильно ли введены минуты
         boolean rightHour = false;
         while (!rightHour){
             if(minute>=0 && minute<=60){
@@ -52,7 +52,7 @@ public class Main {
         return 0;
     }
 
-    public static void exam(){
+    public static void exam(){                                          // Основной метод
         int hourCome, minuteCome, hourNeed, minuteNeed;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Во сколько часов пришел студент?");
